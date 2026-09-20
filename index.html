@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Website</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)">Giovanni Napolitano</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="container py-5">
+        <div class="row align-items-center g-4">
+            <div class="col-md-5">
+                <img src="img/ich.jpeg" alt="Giovanni Napolitano" class="img-fluid rounded">
+            </div>
+            <div class="col-md-7">
+                <h1>Hello, I'm <span class="name-highlight">Giovanni Napolitano</span></h1>
+                <p class="lead">I'm a Business Informatics student from Germany, currently on an exchange semester in
+                    Australia focusing on Web Development and Cyber Security. I'm driven to build technology that solves
+                    real problems. <br> My goal is
+                    straightforward: <br>
+                    finish my degree, explore a Master's degree, and ultimately own and lead my own
+                    tech company. <br>
+                    Off the clock, I live and breathe for football (I play for a club), Padel, F1, and
+                    MMA/BJJ that demand strategy, precision, and relentless improvement. I apply the same mindset to
+                    everything I build.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <section class="container py-5">
+        <h2 class="mb-4">MY Skills</h2>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="orange-card">
+                        <div class="card-content">
+                            <h3>Software Development & Java</h3>
+                            <p>I write clean, efficient code in Java and enjoy turning logical concepts into functional
+                                programs
+                                and software solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="orange-card">
+                        <div class="card-content">
+                            <h3>Problem Solving & Algorithm Design</h3>
+                            <p>I break down complex technical challenges into manageable components to build structured
+                                and
+                                reliable algorithms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="orange-card">
+                        <div class="card-content">
+                            <h3>Travel & Exploration</h3>
+                            <p>I love exploring new places and immersing myself in different cultures to broaden my
+                                perspective
+                                and gain new insights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-dark text-light">
+        <p class="mb-0">&copy; Giovanni Napolitano</p>
+    </footer>
+
+</body>
+
+</html>

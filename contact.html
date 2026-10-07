@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY Contact</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -19,6 +19,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <button id="theme-toggle" class="btn btn-sm" type="button" aria-label="Toggle dark mode">🌙</button>
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -45,7 +46,7 @@
                 <div>
 
 
-                    <form class="contact-form">
+                    <form class="contact-form" novalidate>
                         <h2 id="contact-title" class="mb-4">Contact ME</h2>
 
                         <div class="contact-content ">
@@ -60,11 +61,17 @@
                                     placeholder="Your@email.com" required>
                             </div>
 
+
+
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="textarea" id="message" name="message" placeholder="Write something.."
-                                    style="height:200px" required></textarea>
+                                <textarea class="textarea form-control" id="message" name="message" placeholder="Write something.."
+                                    style="height:200px" maxlength="300" required></textarea>
+                                <small id="char-counter" class="form-text">0 / 300 characters</small>
                             </div>
+                            <div id="form-success" class="form-success" role="status"></div>
+
+
                             <button type="submit" class="contact-button">
                                 <span class="circle1"></span>
                                 <span class="circle2"></span>
@@ -84,7 +91,7 @@
             <!-- Contact Information -->
             <div class="social-grid col-md-5">
                 <div class="up">
-                    <a href="https://wa.me/491516726147" target="_blank" class="card1">
+                    <a href="https://wa.me/4915167261476" target="_blank" class="card1">
                         <svg width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                             class="whatsapp">
                             <path
@@ -110,7 +117,7 @@
                             </path>
                         </svg>
                     </a>
-                    <a href="mailto:g.napolitano26@students.icms.ed.au" class="card4">
+                    <a href="mailto:g.napolitano26@students.icms.edu.au" class="card4">
                         <svg role="img" class="gmail" width="45" height="45" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
